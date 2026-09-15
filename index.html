@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mac mini - Apple (IN) - Built for Apple Intelligence</title>
+  <meta name="description"
+    content="The ultra-compact Mac mini is fiercer and more versatile than ever with M4 and M4 Pro chips, Apple Intelligence, front and back ports, and up to 2x faster storage.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            apple: {
+              bg: '#ffffff',
+              card: '#f5f5f7',
+              cardDark: '#161617',
+              dark: '#1d1d1f',
+              gray: '#86868b',
+              lightGray: '#e8e8ed',
+              blue: '#0071e3',
+              blueHover: '#0077ed',
+              border: 'rgba(0, 0, 0, 0.08)'
+            }
+          },
+          maxWidth: {
+            'apple': '2044px',
+            'screen-3k': '3000px'
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Text"', '"SF Pro Display"', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white text-[#1d1d1f] antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- ==================== APPLE GLOBAL NAVIGATION ==================== -->
+  <!--<header class="sticky top-0 z-50 w-full apple-nav-blur border-b border-black/[0.08] transition-colors duration-300 text-xs">
+    <nav class="max-w-[1024px] mx-auto px-4 h-11 flex items-center justify-between text-gray-700">
+      Apple Logo 
+      <a href="#" class="hover:text-black transition-colors" aria-label="Apple">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 170 170">
+          <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.6-7.77-11.72-14.19-6.09-9.45-10.98-20.2-14.67-32.25-3.69-12.06-5.54-23.47-5.54-34.25 0-14.56 3.69-26.68 11.06-36.37 7.37-9.69 16.73-14.6 28.08-14.73 4.35 0 9.28 1.15 14.79 3.44 5.51 2.29 9.17 3.49 10.98 3.59 1.45-.1 5.3-1.35 11.56-3.74 6.26-2.39 11.28-3.44 15.06-3.15 14.14.76 25.04 6.13 32.7 16.12-12.87 7.82-19.14 18.39-18.8 31.7.34 10.43 4.35 19.19 12.03 26.27 7.68 7.08 17.07 11.14 28.16 12.18-2.61 7.6-5.77 15.03-9.48 22.3zM119.22 31.84c0-7.39 2.65-14.39 7.95-21 5.3-6.61 11.83-10.59 19.59-11.94.43 2.17.65 4.35.65 6.52 0 7.39-2.72 14.6-8.15 21.63-5.43 7.03-12.07 11.08-19.92 12.15-.12-2.38-.12-4.83-.12-7.36z"/>
+        </svg>
+      </a>
+      <a href="#sec-overview" class="hidden md:inline hover:text-black transition-colors">Store</a>
+      <a href="#sec-overview" class="hidden md:inline hover:text-black font-semibold text-black transition-colors">Mac</a>
+      <a href="#sec-ecosystem" class="hidden md:inline hover:text-black transition-colors">iPad</a>
+      <a href="#sec-ecosystem" class="hidden md:inline hover:text-black transition-colors">iPhone</a>
+      <a href="#sec-specs" class="hidden md:inline hover:text-black transition-colors">Watch</a>
+      <a href="#sec-accessories" class="hidden md:inline hover:text-black transition-colors">AirPods</a>
+      <a href="#sec-accessories" class="hidden md:inline hover:text-black transition-colors">Accessories</a>
+      <a href="#sec-applecare" class="hidden md:inline hover:text-black transition-colors">Support</a>
+      
+      Right actions
+      <div class="flex items-center space-x-5">
+        <button class="hover:text-black transition-colors" aria-label="Search">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 16 16">
+            <path d="M15.7 14.3l-3.8-3.8a6.5 6.5 0 1 0-1.4 1.4l3.8 3.8a1 1 0 0 0 1.4-1.4zM2 6.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z"/>
+          </svg>
+        </button>
+        <button class="hover:text-black transition-colors trigger-buy-modal" aria-label="Bag">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 16 16">
+            <path d="M12.5 4h-2a2.5 2.5 0 0 0-5 0h-2A1.5 1.5 0 0 0 2 5.5v8A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 12.5 4zm-4.5-1.5a1.5 1.5 0 0 1 1.5 1.5h-3a1.5 1.5 0 0 1 1.5-1.5zm4.5 11.5h-9a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5z"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+   -->
+
+  <!-- ==================== STICKY PRODUCT SUBNAV ==================== -->
+  <div id="apple-subnav"
+    class="sticky top-11 z-40 w-full apple-subnav-blur border-b border-black/[0.05] transition-all duration-300">
+    <div class="max-w-[1024px] mx-auto px-4 h-13 flex items-center justify-between py-2.5">
+      <div class="flex items-baseline space-x-3">
+        <a href="#sec-overview"
+          class="text-xl font-bold tracking-tight text-[#1d1d1f] hover:text-blue-600 transition-colors">Mac mini</a>
+        <span class="text-xs text-gray-500 hidden sm:inline">From ₹59,900.00*</span>
+      </div>
+
+      <div class="flex items-center space-x-6 text-xs">
+        <nav class="hidden sm:flex items-center space-x-5 text-gray-600">
+          <a href="#sec-overview" class="hover:text-black font-medium text-black">Overview</a>
+          <a href="#sec-ports" class="hover:text-black">Ports</a>
+          <a href="#sec-chips" class="hover:text-black">M4 & M4 Pro</a>
+          <a href="#sec-specs" class="hover:text-black">Tech Specs</a>
+          <a href="#sec-legal" class="hover:text-black text-gray-400">Legal</a>
+        </nav>
+
+        <button
+          class="trigger-buy-modal bg-[#0071e3] hover:bg-[#0077ed] text-white px-4 py-1.5 rounded-full text-xs font-medium transition duration-200 transform hover:scale-[1.03] shadow-sm">
+          Buy
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== QUICK JUMP NAVIGATION BAR ==================== -->
+  <div
+    class="bg-[#faf7f4] border-b border-gray-200/60 py-2.5 px-4 overflow-x-auto text-xs text-gray-500 whitespace-nowrap">
+    <div class="max-w-[1024px] mx-auto flex items-center justify-center space-x-6">
+      <span class="font-medium text-gray-800">Explore Mac mini:</span>
+      <a href="#sec-hero" class="hover:text-blue-600 transition-colors">Hero</a>
+      <a href="#sec-size" class="hover:text-blue-600 transition-colors">Size (12.7 cm)</a>
+      <a href="#sec-ports" class="hover:text-blue-600 transition-colors">Front & Back Ports</a>
+      <a href="#sec-thermal" class="hover:text-blue-600 transition-colors">Thermal System</a>
+      <a href="#sec-intelligence" class="hover:text-blue-600 transition-colors">Apple Intelligence</a>
+      <a href="#sec-storage" class="hover:text-blue-600 transition-colors">Faster SSD</a>
+      <a href="#sec-apps" class="hover:text-blue-600 transition-colors">Apps on Mac</a>
+      <a href="#sec-chip-compare" class="hover:text-blue-600 transition-colors font-medium text-blue-600">M4 vs M4
+        Pro</a>
+      <a href="#sec-specs" class="hover:text-blue-600 transition-colors">Compare Models</a>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN MARKETING CONTENT ==================== -->
+  <main class="w-full bg-white overflow-hidden pb-16">
+
+    <!-- ==================== SECTION 1: HERO BANNER ==================== -->
+    <section id="sec-hero" class="w-full bg-[#faf7f4] relative border-b border-gray-200/50">
+      <div class="max-w-[1920px] mx-auto relative group">
+        <picture>
+          <source srcset="assets/hero_banner.webp" type="image/webp">
+          <img src="assets/hero_banner.jpg"
+            alt="Mac mini - Built for Apple Intelligence. Ultra-compact, fiercer, and more versatile than ever."
+            class="w-full h-auto object-cover block" loading="eager" width="3000" height="1879">
+        </picture>
+        <!-- Overlay CTA for accessibility & interaction -->
+        <div
+          class="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button
+            class="trigger-buy-modal bg-[#0071e3] hover:bg-[#0077ed] text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-lg hover:shadow-xl transition-all">
+            Buy Mac mini
+          </button>
+          <a href="#sec-size"
+            class="bg-white/90 hover:bg-white text-gray-900 px-6 py-2.5 rounded-full text-sm font-semibold backdrop-blur shadow hover:shadow-md transition-all">
+            Explore Features ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Wrapper for 2044px grid modules -->
+    <div class="max-w-[1440px] xl:max-w-[1680px] 2xl:max-w-[2044px] mx-auto px-4 sm:px-6 lg:px-8 space-y-9 mt-9">
+
+      <!-- ==================== SECTION 2: SIZE & FORM FACTOR ==================== -->
+      <section id="sec-size" class="apple-card relative overflow-hidden group">
+        <picture>
+          <source srcset="assets/size_card.webp" type="image/webp">
+          <img src="assets/size_card.jpg" alt="12.7 cm - Sized to fit. Built to conquer."
+            class="apple-card-img transition-transform duration-500 group-hover:scale-[1.01]" loading="lazy"
+            width="2044" height="878">
+        </picture>
+      </section>
+
+      <!-- ==================== SECTION 3: PORTS & CONNECTIVITY ==================== -->
+      <section id="sec-ports" class="apple-card relative group">
+        <!-- Interactive View Filter Buttons -->
+        <div
+          class="absolute top-6 right-6 z-30 flex items-center space-x-2 bg-white/80 backdrop-blur-md p-1.5 rounded-full shadow-sm border border-gray-200/50">
+          <button
+            class="port-filter-btn px-4 py-1 rounded-full text-xs font-medium bg-blue-600 text-white transition-all"
+            data-port-view="all">
+            All Ports
+          </button>
+          <button
+            class="port-filter-btn px-4 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all"
+            data-port-view="front">
+            Front Only
+          </button>
+          <button
+            class="port-filter-btn px-4 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all"
+            data-port-view="back">
+            Back Only
+          </button>
+        </div>
+
+        <div class="relative">
+          <!-- Full Ports Visual -->
+          <div id="ports-full-view" class="relative">
+            <picture>
+              <source srcset="assets/ports_card.webp" type="image/webp">
+              <img src="assets/ports_card.jpg"
+                alt="Front and back ports on Mac mini - USB-C, 3.5mm headphone jack, Thunderbolt, HDMI, Gigabit Ethernet"
+                class="apple-card-img" loading="lazy" width="2044" height="878">
+            </picture>
+
+            <!-- Front Ports Interactive Hotspots -->
+            <div id="ports-front-view" class="contents">
+              <!-- Front USB-C Port 1 -->
+              <div class="hotspot-pin" style="left: 20%; top: 62%;">
+                +
+                <div class="hotspot-tooltip">
+                  <strong>2× USB-C Ports</strong><br>Supports USB 3 (up to 10Gb/s) & device charging
+                </div>
+              </div>
+
+              <!-- Front Headphone Jack -->
+              <div class="hotspot-pin" style="left: 31%; top: 62%;">
+                +
+                <div class="hotspot-tooltip">
+                  <strong>3.5 mm Headphone Jack</strong><br>Advanced support for high-impedance headphones
+                </div>
+              </div>
+            </div>
+
+            <!-- Back Ports Interactive Hotspots -->
+            <div id="ports-back-view" class="contents">
+              <!-- Ethernet -->
+              <div class="hotspot-pin" style="left: 64%; top: 62%;">
+                +
+                <div class="hotspot-tooltip">
+                  <strong>Ethernet Port</strong><br>Gigabit Ethernet (configurable to 10Gb Ethernet)
+                </div>
+              </div>
+
+              <!-- HDMI -->
+              <div class="hotspot-pin" style="left: 72%; top: 62%;">
+                +
+                <div class="hotspot-tooltip">
+                  <strong>HDMI 2.1 Port</strong><br>Support for up to 8K display at 60Hz or 4K at 240Hz
+                </div>
+              </div>
+
+              <!-- Thunderbolt 4/5 -->
+              <div class="hotspot-pin" style="left: 82%; top: 62%;">
+                +
+                <div class="hotspot-tooltip">
+                  <strong>3× Thunderbolt 4 / 5</strong><br>Data transfer up to 120Gb/s on M4 Pro, DisplayPort, Charging
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SECTION 4 & 5: THERMAL & M4/M4 PRO (2-COLUMN GRID) ==================== -->
+      <section id="sec-thermal" class="grid grid-cols-1 md:grid-cols-2 gap-9">
+        <!-- Section 4: Innovative Thermal Architecture -->
+        <article class="apple-card group">
+          <picture>
+            <source srcset="assets/thermal_card.webp" type="image/webp">
+            <img src="assets/thermal_card.jpg"
+              alt="Innovative thermal system - stays cool and quiet under heavy workloads"
+              class="apple-card-img transition-transform duration-500 group-hover:scale-[1.01]" loading="lazy"
+              width="1003" height="878">
+          </picture>
+        </article>
+
+        <!-- Section 5: Supercharged by M4 & M4 Pro Chips -->
+        <article id="sec-chips" class="apple-card group">
+          <picture>
+            <source srcset="assets/chips_card.webp" type="image/webp">
+            <img src="assets/chips_card.jpg" alt="Supercharged by Apple M4 and M4 Pro chips"
+              class="apple-card-img transition-transform duration-500 group-hover:scale-[1.01]" loading="lazy"
+              width="1003" height="878">
+          </picture>
+        </article>
+      </section>
+
+      <!-- ==================== SECTION 6: APPLE INTELLIGENCE ==================== -->
+      <section id="sec-intelligence" class="apple-card siri-glow relative overflow-hidden group">
+        <picture>
+          <source srcset="assets/intelligence_card.webp" type="image/webp">
+          <img src="assets/intelligence_card.jpg" alt="Designed for Apple Intelligence. Personal, private, powerful."
+            class="apple-card-img transition-transform duration-500 group-hover:scale-[1.01]" loading="lazy"
+            width="2044" height="1003">
+        </picture>
+      </section>
+
+      <!-- ==================== SECTION 7 & 8: SIRI AI & STORAGE (ASYMMETRIC GRID) ==================== -->
+      <section id="sec-storage" class="grid grid-cols-1 lg:grid-cols-12 gap-9">
+        <!-- Section 7: Siri AI -->
+        <article class="lg:col-span-4 apple-card group">
+          <picture>
+            <source srcset="assets/siri_ai_card.webp" type="image/webp">
+            <img src="assets/siri_ai_card.jpg" alt="Siri AI coming in English later this year"
+              class="apple-card-img transition-transform duration-500 group-hover:scale-[1.01]" loading="lazy"
+              width="655" height="878">
+          </picture>
+        </article>
+
+        <!-- Section 8: Faster Storage -->
+        <article class="lg:col-span-8 apple-card group">
+          <picture>
+            <source srcset="assets/storage_card.webp" type="image/webp">
+            <img src="assets/storage_card.jpg"
+              alt="Up to 2x faster SSD storage. Open files, launch apps, and transfer media in a flash."
+              class="apple-card-img transition-transform duration-500 group-hover:scale-[1.01]" loading="lazy"
+              width="1351" height="878">
+          </picture>
+        </article>
+      </section>
+
+      <!-- ==================== SECTION 9: APPS ECOSYSTEM ==================== -->
+      <section id="sec-apps" class="apple-card relative overflow-hidden group">
+        <picture>
+          <source srcset="assets/apps_card.webp" type="image/webp">
+          <img src="assets/apps_card.jpg"
+            alt="Apps fly on Mac mini - Microsoft 365, Adobe Creative Cloud, Logic Pro, Xcode, Final Cut Pro, and more"
+            class="apple-card-img transition-transform duration-500 group-hover:scale-[1.01]" loading="lazy"
+            width="2044" height="878">
+        </picture>
+      </section>
+
+      <!-- ==================== SECTION 10 & 11: IPHONE & ACCESSORIES (2-COLUMN GRID) ==================== -->
+      <section id="sec-ecosystem" class="grid grid-cols-1 md:grid-cols-2 gap-9">
+        <!-- Section 10: iPhone Mirroring -->
+        <article class="apple-card group">
+          <picture>
+            <source srcset="assets/iphone_card.webp" type="image/webp">
+            <img src="assets/iphone_card.jpg"
+              alt="Mac + iPhone. iPhone Mirroring lets you view and use your iPhone directly from your Mac."
+              class="apple-card-img transition-transform duration-500 group-hover:scale-[1.01]" loading="lazy"
+              width="1003" height="878">
+          </picture>
+        </article>
+
+        <!-- Section 11: Magic Accessories -->
+        <article id="sec-accessories" class="apple-card group">
+          <picture>
+            <source srcset="assets/accessories_card.webp" type="image/webp">
+            <img src="assets/accessories_card.jpg"
+              alt="Magic accessories - Magic Keyboard with Touch ID, Magic Mouse, and Magic Trackpad with USB-C"
+              class="apple-card-img transition-transform duration-500 group-hover:scale-[1.01]" loading="lazy"
+              width="1003" height="878">
+          </picture>
+        </article>
+      </section>
+
+    </div><!-- End max-w-[2044px] content wrapper -->
+
+    <!-- ==================== SECTION 12: CHIP COMPARISON BANNER & INTERACTIVE CARDS ==================== -->
+    <section id="sec-chip-compare" class="w-full mt-14 bg-[#f5f5f7] py-12 border-y border-gray-200/50">
+      <div class="max-w-[1440px] xl:max-w-[1680px] 2xl:max-w-[2044px] mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header & Interactive Filter -->
+        <div class="flex flex-col sm:flex-row items-center justify-between mb-8 pb-4 border-b border-gray-300/60">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-[#1d1d1f]">Which chip is right for you?</h2>
+            <p class="text-gray-500 text-sm mt-1">Choose between the powerhouse Apple M4 or the pro-level Apple M4 Pro.
+            </p>
+          </div>
+
+          <!-- Interactive Chip Switcher Buttons -->
+          <div class="mt-4 sm:mt-0 flex items-center bg-gray-200/70 p-1 rounded-xl">
+            <button
+              class="chip-tab-btn px-5 py-2 rounded-lg text-xs font-semibold bg-white text-black shadow-sm transition-all"
+              data-chip="all">
+              Compare Both
+            </button>
+            <button
+              class="chip-tab-btn px-5 py-2 rounded-lg text-xs font-semibold text-gray-500 hover:text-black transition-all"
+              data-chip="m4">
+              Apple M4
+            </button>
+            <button
+              class="chip-tab-btn px-5 py-2 rounded-lg text-xs font-semibold text-gray-500 hover:text-black transition-all"
+              data-chip="m4pro">
+              Apple M4 Pro
+            </button>
+          </div>
+        </div>
+
+        <!-- Visual Chip Comparison Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-9">
+          <!-- M4 Card -->
+          <div
+            class="chip-compare-card bg-white rounded-3xl p-4 shadow-sm border border-black/[0.04] transition-all duration-300"
+            data-chip="m4">
+            <picture>
+              <source srcset="assets/chip_compare_m4.webp" type="image/webp">
+              <img src="assets/chip_compare_m4.jpg" alt="Apple M4 chip specs and features"
+                class="w-full h-auto rounded-2xl block" loading="lazy" width="1003" height="1378">
+            </picture>
+            <div class="p-6 text-center">
+              <button
+                class="trigger-buy-modal w-full py-3 px-6 rounded-full bg-[#0071e3] hover:bg-[#0077ed] text-white text-sm font-semibold transition">
+                Select M4 (From ₹59,900.00*)
+              </button>
+            </div>
+          </div>
+
+          <!-- M4 Pro Card -->
+          <div
+            class="chip-compare-card bg-white rounded-3xl p-4 shadow-sm border border-black/[0.04] transition-all duration-300"
+            data-chip="m4pro">
+            <picture>
+              <source srcset="assets/chip_compare_m4pro.webp" type="image/webp">
+              <img src="assets/chip_compare_m4pro.jpg" alt="Apple M4 Pro chip specs and features"
+                class="w-full h-auto rounded-2xl block" loading="lazy" width="1003" height="1378">
+            </picture>
+            <div class="p-6 text-center">
+              <button
+                class="trigger-buy-modal w-full py-3 px-6 rounded-full bg-[#0071e3] hover:bg-[#0077ed] text-white text-sm font-semibold transition">
+                Select M4 Pro (From ₹1,49,900.00*)
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Wrapper for Remaining Sections -->
+    <div class="max-w-[1440px] xl:max-w-[1680px] 2xl:max-w-[2044px] mx-auto px-4 sm:px-6 lg:px-8 space-y-9 mt-14">
+
+      <!-- ==================== SECTION 13: WHY MAC (3-COLUMN CARDS) ==================== -->
+      <section id="sec-why-mac">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <h2 class="text-3xl font-bold tracking-tight text-[#1d1d1f]">Why Mac</h2>
+          <p class="text-gray-500 text-sm mt-2">Engineered to elevate everything you do with unmatched ease, power, and
+            durability.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1: Easy to Learn -->
+          <article class="apple-card group">
+            <picture>
+              <source srcset="assets/why_mac_easy.webp" type="image/webp">
+              <img src="assets/why_mac_easy.jpg" alt="Mac is designed to be easy to learn and use"
+                class="apple-card-img transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy"
+                width="655" height="653">
+            </picture>
+          </article>
+
+          <!-- Card 2: Incredible Power & Speed -->
+          <article class="apple-card group">
+            <picture>
+              <source srcset="assets/why_mac_power.webp" type="image/webp">
+              <img src="assets/why_mac_power.jpg"
+                alt="The combination of Apple silicon and macOS means Mac delivers incredible power and speed"
+                class="apple-card-img transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy"
+                width="658" height="653">
+            </picture>
+          </article>
+
+          <!-- Card 3: Built to Last -->
+          <article class="apple-card group">
+            <picture>
+              <source srcset="assets/why_mac_durable.webp" type="image/webp">
+              <img src="assets/why_mac_durable.jpg"
+                alt="With a durable aluminium enclosure and free software updates, Mac is in it for the long haul"
+                class="apple-card-img transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy"
+                width="655" height="653">
+            </picture>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================== SECTION 14: TECH SPECS COMPARISON MATRIX ==================== -->
+      <section id="sec-specs" class="apple-card p-4 sm:p-8 bg-white border border-gray-200/80 shadow-sm">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs font-semibold text-blue-600 uppercase tracking-widest">Compare</span>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-[#1d1d1f] mt-1">Which Mac mini is right for you?
+          </h2>
+          <p class="text-gray-500 text-sm mt-2">Compare Mac mini models across processing power, memory, ports, and
+            display capabilities.</p>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl">
+          <picture>
+            <source srcset="assets/tech_specs_matrix.webp" type="image/webp">
+            <img src="assets/tech_specs_matrix.jpg"
+              alt="Mac mini technical specifications comparison table - M4 vs M4 Pro vs previous models"
+              class="apple-card-img" loading="lazy" width="2044" height="2426">
+          </picture>
+        </div>
+
+        <div class="mt-8 flex justify-center">
+          <button
+            class="trigger-buy-modal bg-[#0071e3] hover:bg-[#0077ed] text-white px-8 py-3 rounded-full text-sm font-semibold shadow transition-all transform hover:scale-[1.02]">
+            Configure & Buy Mac mini
+          </button>
+        </div>
+      </section>
+
+      <!-- ==================== SECTION 15: APPLECARE+ PROTECTION PLAN ==================== -->
+      <section id="sec-applecare" class="apple-card group">
+        <picture>
+          <source srcset="assets/applecare_card.webp" type="image/webp">
+          <img src="assets/applecare_card.jpg"
+            alt="AppleCare+ for Mac - Enjoy easy, fast repairs for accidents like drops and spills, and priority care."
+            class="apple-card-img transition-transform duration-500 group-hover:scale-[1.01]" loading="lazy"
+            width="2044" height="868">
+        </picture>
+      </section>
+
+      <!-- ==================== SECTION 16: LEGAL DISCLAIMERS & FOOTNOTES ==================== -->
+      <section id="sec-legal" class="pt-10 pb-16 border-t border-gray-200 text-[#86868b] text-[11px] leading-relaxed">
+        <h3 class="font-bold text-gray-700 text-xs mb-4 uppercase tracking-wider">◊ Legal Disclaimers</h3>
+
+        <div class="space-y-4">
+          <p id="footnote-accessories" class="p-2 transition-colors duration-500 rounded">
+            <strong class="text-gray-700">Accessories:</strong> Accessories are sold separately; availability varies by
+            region.
+          </p>
+
+          <p id="footnote-intelligence" class="p-2 transition-colors duration-500 rounded">
+            <strong class="text-gray-700">Apple Intelligence:</strong> Apple Intelligence is available with Siri and
+            device language set to Chinese (Simplified), Chinese (Traditional), Danish, Dutch, English, French, German,
+            Italian, Japanese, Korean, Norwegian, Portuguese, Spanish, Swedish, Turkish or Vietnamese. Some features may
+            not be available in all regions or languages. Some devices may not be available in all regions.
+          </p>
+
+          <p id="footnote-apps" class="p-2 transition-colors duration-500 rounded">
+            <strong class="text-gray-700">Apps:</strong> Some apps and services may require a subscription. Some
+            software is sold separately.
+          </p>
+
+          <p id="footnote-availability" class="p-2 transition-colors duration-500 rounded">
+            <strong class="text-gray-700">Feature, App and Service Availability:</strong> Features are subject to
+            change. Some features, applications and services may not be available in all regions or languages.
+          </p>
+
+          <p id="footnote-siri" class="p-2 transition-colors duration-500 rounded">
+            <strong class="text-gray-700">Siri AI:</strong> Siri AI will be available in beta later this year and
+            requires an Apple Intelligence–enabled device set to a supported language. Available in English to start.
+            Siri AI will not initially be available in the EU on iOS, iPadOS and watchOS.
+          </p>
+
+          <p id="footnote-storage" class="p-2 transition-colors duration-500 rounded">
+            <strong class="text-gray-700">Storage:</strong> Actual formatted capacity of SSD is less.
+          </p>
+
+          <p id="footnote-faster-storage" class="p-2 transition-colors duration-500 rounded">
+            <strong class="text-gray-700">Up to 2x Faster Storage:</strong> Testing conducted by Apple in July 2026
+            using pre-production Mac mini systems with Apple M6, 12-core CPU and 12-core GPU, and production Mac mini
+            systems with Apple M4, 10-core CPU and 10-core GPU, both configured with 32GB of unified memory and 2TB SSD.
+            Tested with FIO 3.42, 1024KB request size, 10GB test file and IO depth=8. Mac mini systems tested with an
+            attached 5K display. Performance tests are conducted using specific computer systems and reflect the
+            approximate performance of Mac mini.
+          </p>
+
+          <p id="footnote-benchmarks" class="p-2 transition-colors duration-500 rounded">
+            <strong class="text-gray-700">Performance Benchmarks:</strong> Testing conducted by Apple in July 2026 using
+            pre-production Mac mini systems. LM Studio 0.4.18+1 used for token latency with 8K-token prompt and 14B
+            parameter model. Blender 5.2.0 used for 3D rendering benchmark. Tested with attached 5K display. Performance
+            tests are conducted using specific computer systems and reflect the approximate performance of Mac mini.
+          </p>
+
+          <p id="footnote-wifi7" class="p-2 transition-colors duration-500 rounded">
+            <strong class="text-gray-700">Wi-Fi 7:</strong> Wi-Fi 7 availability varies by country. For more
+            information, visit <a href="https://support.apple.com/en-in/148165"
+              class="text-blue-600 underline hover:text-blue-800" target="_blank"
+              rel="noopener">support.apple.com/en-in/148165</a>.
+          </p>
+        </div>
+      </section>
+
+    </div><!-- End wrapper -->
+
+  </main>
+
+  <!-- ==================== APPLE GLOBAL FOOTER ==================== -->
+  <footer class="w-full bg-[#f5f5f7] border-t border-gray-300/80 text-[11px] text-[#6e6e73] py-8">
+    <div class="max-w-[1024px] mx-auto px-4 space-y-4">
+      <div class="flex items-center space-x-2 text-gray-500 pb-4 border-b border-gray-200">
+        <a href="#" class="hover:text-black">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 170 170">
+            <path
+              d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.6-7.77-11.72-14.19-6.09-9.45-10.98-20.2-14.67-32.25-3.69-12.06-5.54-23.47-5.54-34.25 0-14.56 3.69-26.68 11.06-36.37 7.37-9.69 16.73-14.6 28.08-14.73 4.35 0 9.28 1.15 14.79 3.44 5.51 2.29 9.17 3.49 10.98 3.59 1.45-.1 5.3-1.35 11.56-3.74 6.26-2.39 11.28-3.44 15.06-3.15 14.14.76 25.04 6.13 32.7 16.12-12.87 7.82-19.14 18.39-18.8 31.7.34 10.43 4.35 19.19 12.03 26.27 7.68 7.08 17.07 11.14 28.16 12.18-2.61 7.6-5.77 15.03-9.48 22.3zM119.22 31.84c0-7.39 2.65-14.39 7.95-21 5.3-6.61 11.83-10.59 19.59-11.94.43 2.17.65 4.35.65 6.52 0 7.39-2.72 14.6-8.15 21.63-5.43 7.03-12.07 11.08-19.92 12.15-.12-2.38-.12-4.83-.12-7.36z" />
+          </svg>
+        </a>
+        <span>›</span>
+        <a href="#" class="hover:text-black">Mac</a>
+        <span>›</span>
+        <span class="text-gray-700 font-medium">Mac mini</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+        <p>Copyright © 2026 Apple Inc. All rights reserved.</p>
+        <div class="flex flex-wrap gap-x-4 gap-y-1">
+          <a href="#" class="hover:text-black">Privacy Policy</a>
+          <span>|</span>
+          <a href="#" class="hover:text-black">Terms of Use</a>
+          <span>|</span>
+          <a href="#" class="hover:text-black">Sales Policy</a>
+          <span>|</span>
+          <a href="#" class="hover:text-black">Legal</a>
+          <span>|</span>
+          <a href="#" class="hover:text-black">Site Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BUY CONFIGURATOR MODAL ==================== -->
+  <div id="buy-configurator-modal"
+    class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div
+      class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+
+      <!-- Close button -->
+      <button id="close-buy-modal"
+        class="absolute top-5 right-5 text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 w-8 h-8 rounded-full flex items-center justify-center transition"
+        aria-label="Close">
+        ✕
+      </button>
+
+      <div class="text-center mb-6">
+        <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">Configure your Mac mini</span>
+        <h3 class="text-2xl font-bold text-gray-900 mt-1">Select your specifications</h3>
+        <p class="text-sm text-gray-500">Free delivery and easy Apple Trade In available.</p>
+      </div>
+
+      <!-- Live Configurator Options -->
+      <form class="space-y-6">
+        <!-- Chip selection -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">1. Apple Silicon
+            Chip</label>
+          <div class="grid grid-cols-2 gap-3">
+            <label
+              class="cursor-pointer border-2 border-blue-600 rounded-2xl p-4 flex flex-col items-center text-center has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/40">
+              <input type="radio" name="config-chip" value="m4" checked class="sr-only">
+              <span class="font-bold text-sm text-gray-900">Apple M4</span>
+              <span class="text-xs text-gray-500 mt-1">10-core CPU / 10-core GPU</span>
+              <span class="text-xs font-semibold text-blue-600 mt-2">Included</span>
+            </label>
+            <label
+              class="cursor-pointer border-2 border-gray-200 hover:border-gray-400 rounded-2xl p-4 flex flex-col items-center text-center has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/40">
+              <input type="radio" name="config-chip" value="m4pro" class="sr-only">
+              <span class="font-bold text-sm text-gray-900">Apple M4 Pro</span>
+              <span class="text-xs text-gray-500 mt-1">12-core CPU / 16-core GPU</span>
+              <span class="text-xs font-semibold text-blue-600 mt-2">+₹90,000</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Unified Memory -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">2. Unified Memory</label>
+          <div class="grid grid-cols-3 gap-2.5">
+            <label
+              class="cursor-pointer border-2 border-blue-600 rounded-xl p-3 text-center has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/40">
+              <input type="radio" name="config-memory" value="16gb" checked class="sr-only">
+              <span class="block text-xs font-bold">16GB</span>
+              <span class="text-[10px] text-gray-500">Base</span>
+            </label>
+            <label
+              class="cursor-pointer border-2 border-gray-200 hover:border-gray-400 rounded-xl p-3 text-center has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/40">
+              <input type="radio" name="config-memory" value="24gb" class="sr-only">
+              <span class="block text-xs font-bold">24GB</span>
+              <span class="text-[10px] text-gray-500">+₹20,000</span>
+            </label>
+            <label
+              class="cursor-pointer border-2 border-gray-200 hover:border-gray-400 rounded-xl p-3 text-center has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/40">
+              <input type="radio" name="config-memory" value="32gb" class="sr-only">
+              <span class="block text-xs font-bold">32GB</span>
+              <span class="text-[10px] text-gray-500">+₹40,000</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Storage -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">3. SSD Storage</label>
+          <div class="grid grid-cols-3 gap-2.5">
+            <label
+              class="cursor-pointer border-2 border-blue-600 rounded-xl p-3 text-center has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/40">
+              <input type="radio" name="config-storage" value="256gb" checked class="sr-only">
+              <span class="block text-xs font-bold">256GB SSD</span>
+              <span class="text-[10px] text-gray-500">Base</span>
+            </label>
+            <label
+              class="cursor-pointer border-2 border-gray-200 hover:border-gray-400 rounded-xl p-3 text-center has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/40">
+              <input type="radio" name="config-storage" value="512gb" class="sr-only">
+              <span class="block text-xs font-bold">512GB SSD</span>
+              <span class="text-[10px] text-gray-500">+₹20,000</span>
+            </label>
+            <label
+              class="cursor-pointer border-2 border-gray-200 hover:border-gray-400 rounded-xl p-3 text-center has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/40">
+              <input type="radio" name="config-storage" value="1tb" class="sr-only">
+              <span class="block text-xs font-bold">1TB SSD</span>
+              <span class="text-[10px] text-gray-500">+₹40,000</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Total Price and Checkout -->
+        <div class="pt-4 border-t border-gray-200 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-gray-500 block">Total Price (Incl. of all taxes)</span>
+            <span id="config-total-price" class="text-2xl font-bold text-gray-900">₹59,900.00*</span>
+          </div>
+          <button type="button"
+            class="bg-[#0071e3] hover:bg-[#0077ed] text-white font-semibold px-7 py-3 rounded-full text-sm shadow hover:shadow-md transition transform hover:scale-[1.02]">
+            Add to Bag
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

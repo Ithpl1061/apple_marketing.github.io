@@ -1,0 +1,1218 @@
+[
+  {
+    "name": "Section_1",
+    "bbox": [
+      -1635,
+      -1,
+      4635,
+      1879
+    ],
+    "children": [
+      {
+        "name": "S1_Shape_faf7f4_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          -1635,
+          -1,
+          4635,
+          1879
+        ]
+      },
+      {
+        "name": "S1_Text_1",
+        "kind": "type",
+        "visible": true,
+        "bbox": [
+          686,
+          1499,
+          2310,
+          1679
+        ],
+        "text": "The ultra-compact Mac mini is fiercer and more versatile than ever. \u0003The most AI-capable mini yet. Faster storage and memory. And support \u0003for Wi-Fi 7 and Bluetooth 6.◊ Big performance comes in a small package."
+      },
+      {
+        "name": "RX-S1_Sub_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1229,
+          1361,
+          1769,
+          1405
+        ]
+      },
+      {
+        "name": "RX-hero_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          888,
+          685,
+          2111,
+          1171
+        ]
+      },
+      {
+        "name": "RX-S1_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1019,
+          358,
+          1994,
+          481
+        ]
+      },
+      {
+        "name": "RX-hero_logo_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1284,
+          220,
+          1717,
+          295
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_2",
+    "bbox": [
+      478,
+      1988,
+      2522,
+      2866
+    ],
+    "children": [
+      {
+        "name": "S2_Shape_cbcf_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          478,
+          1988,
+          2522,
+          2866
+        ]
+      },
+      {
+        "name": "RX-size_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          479,
+          1990,
+          2521,
+          2865
+        ]
+      },
+      {
+        "name": "RX-S2_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          686,
+          2338,
+          1212,
+          2536
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_3",
+    "bbox": [
+      478,
+      2905,
+      2522,
+      3783
+    ],
+    "children": [
+      {
+        "name": "S3_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          478,
+          2905,
+          2522,
+          3783
+        ]
+      },
+      {
+        "name": "RX-S3_Text_2",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1926,
+          3630,
+          2073,
+          3658
+        ]
+      },
+      {
+        "name": "RX-ports_back_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1627,
+          3302,
+          2371,
+          3598
+        ]
+      },
+      {
+        "name": "RX-S3_Head_2",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1721,
+          3040,
+          2172,
+          3238
+        ]
+      },
+      {
+        "name": "RX-S3_Text_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          926,
+          3631,
+          1078,
+          3658
+        ]
+      },
+      {
+        "name": "RX-ports_front_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          629,
+          3302,
+          1373,
+          3598
+        ]
+      },
+      {
+        "name": "RX-S3_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          659,
+          3115,
+          1138,
+          3250
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_4",
+    "bbox": [
+      478,
+      3821,
+      1481,
+      4699
+    ],
+    "children": [
+      {
+        "name": "S4_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          478,
+          3821,
+          1481,
+          4699
+        ]
+      },
+      {
+        "name": "RX-performance_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          479,
+          3823,
+          1479,
+          4698
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_5",
+    "bbox": [
+      1519,
+      3821,
+      2522,
+      4699
+    ],
+    "children": [
+      {
+        "name": "S5_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          1519,
+          3821,
+          2522,
+          4699
+        ]
+      },
+      {
+        "name": "RX-S5_Text_2",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1892,
+          4467,
+          2390,
+          4503
+        ]
+      },
+      {
+        "name": "RX-chip_m5pro_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1692,
+          4404,
+          1848,
+          4560
+        ]
+      },
+      {
+        "name": "RX-S5_Text_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1892,
+          4234,
+          2357,
+          4270
+        ]
+      },
+      {
+        "name": "RX-chip_m6_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1692,
+          4171,
+          1848,
+          4327
+        ]
+      },
+      {
+        "name": "RX-S5_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1774,
+          3940,
+          2269,
+          4064
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_6",
+    "bbox": [
+      478,
+      4738,
+      2522,
+      5741
+    ],
+    "children": [
+      {
+        "name": "S6_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          478,
+          4738,
+          2522,
+          5741
+        ]
+      },
+      {
+        "name": "RX-ai_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          655,
+          5081,
+          2345,
+          5739
+        ]
+      },
+      {
+        "name": "RX-S6_Text_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          846,
+          4947,
+          2154,
+          5032
+        ]
+      },
+      {
+        "name": "RX-S6_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1117,
+          4856,
+          1882,
+          4916
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_7",
+    "bbox": [
+      478,
+      5780,
+      1133,
+      6658
+    ],
+    "children": [
+      {
+        "name": "S7_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          478,
+          5780,
+          1133,
+          6658
+        ]
+      },
+      {
+        "name": "Option 1",
+        "kind": "group",
+        "visible": true,
+        "bbox": [
+          529,
+          6044,
+          1081,
+          6399
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_8",
+    "bbox": [
+      1171,
+      5780,
+      2522,
+      6658
+    ],
+    "children": [
+      {
+        "name": "S8_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          1171,
+          5780,
+          2522,
+          6658
+        ]
+      },
+      {
+        "name": "RX-storage_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1859,
+          5906,
+          2521,
+          6536
+        ]
+      },
+      {
+        "name": "RX-S8_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1254,
+          6156,
+          1702,
+          6291
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_9",
+    "bbox": [
+      478,
+      6696,
+      2522,
+      7574
+    ],
+    "children": [
+      {
+        "name": "S9_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          478,
+          6696,
+          2522,
+          7574
+        ]
+      },
+      {
+        "name": "RX-apps_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          565,
+          6737,
+          2426,
+          7535
+        ]
+      },
+      {
+        "name": "RX-S9_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1194,
+          7110,
+          1793,
+          7170
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_10",
+    "bbox": [
+      478,
+      7613,
+      1481,
+      8491
+    ],
+    "children": [
+      {
+        "name": "S10_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          478,
+          7613,
+          1481,
+          8491
+        ]
+      },
+      {
+        "name": "RX-iphone_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          479,
+          7615,
+          1452,
+          8161
+        ]
+      },
+      {
+        "name": "RX-S10_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          799,
+          8249,
+          1158,
+          8372
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_11",
+    "bbox": [
+      1519,
+      7613,
+      2522,
+      8491
+    ],
+    "children": [
+      {
+        "name": "S11_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          1519,
+          7613,
+          2522,
+          8491
+        ]
+      },
+      {
+        "name": "RX-accessories_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1606,
+          7958,
+          2435,
+          8383
+        ]
+      },
+      {
+        "name": "RX-S11_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1767,
+          7730,
+          2274,
+          7855
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_12",
+    "bbox": [
+      -1635,
+      8530,
+      4635,
+      9908
+    ],
+    "children": [
+      {
+        "name": "S12_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          -1635,
+          8530,
+          4635,
+          9908
+        ]
+      },
+      {
+        "name": "S12_Shape_ffffff_8",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          2009,
+          9392,
+          2439,
+          9766
+        ]
+      },
+      {
+        "name": "RX-S12_Text_8",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          2107,
+          9628,
+          2341,
+          9693
+        ]
+      },
+      {
+        "name": "RX-icon_sparkles_elevated",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          2184,
+          9481,
+          2263,
+          9578
+        ]
+      },
+      {
+        "name": "S12_Shape_ffffff_7",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          1561,
+          9392,
+          1991,
+          9766
+        ]
+      },
+      {
+        "name": "RX-S12_Text_7",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1643,
+          9628,
+          1910,
+          9693
+        ]
+      },
+      {
+        "name": "RX-icon_cpu_elevated",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1734,
+          9488,
+          1817,
+          9571
+        ]
+      },
+      {
+        "name": "S12_Shape_ffffff_6",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          2009,
+          9000,
+          2439,
+          9374
+        ]
+      },
+      {
+        "name": "RX-S12_Text_6",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          2085,
+          9216,
+          2361,
+          9315
+        ]
+      },
+      {
+        "name": "RX-thunderbolt_and_port_usb_c_elevated",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          2185,
+          9078,
+          2264,
+          9159
+        ]
+      },
+      {
+        "name": "S12_Shape_ffffff_5",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          1561,
+          9000,
+          1991,
+          9374
+        ]
+      },
+      {
+        "name": "RX-S12_Text_5",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1626,
+          9223,
+          1926,
+          9322
+        ]
+      },
+      {
+        "name": "RX-S12_Smart_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1655,
+          9052,
+          1897,
+          9191
+        ]
+      },
+      {
+        "name": "RX-S12_Sub_2",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1585,
+          8883,
+          2414,
+          8918
+        ]
+      },
+      {
+        "name": "S12_Shape_ffffff_4",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          1009,
+          9392,
+          1439,
+          9766
+        ]
+      },
+      {
+        "name": "RX-S12_Text_4",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1052,
+          9627,
+          1397,
+          9693
+        ]
+      },
+      {
+        "name": "RX-icon_sparkles_elevated",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1184,
+          9481,
+          1263,
+          9578
+        ]
+      },
+      {
+        "name": "S12_Shape_ffffff_3",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          561,
+          9392,
+          991,
+          9766
+        ]
+      },
+      {
+        "name": "RX-S12_Text_3",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          609,
+          9627,
+          944,
+          9693
+        ]
+      },
+      {
+        "name": "RX-icon_cpu_elevated",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          734,
+          9488,
+          817,
+          9571
+        ]
+      },
+      {
+        "name": "S12_Shape_ffffff_2",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          1009,
+          9000,
+          1439,
+          9374
+        ]
+      },
+      {
+        "name": "RX-S12_Text_2",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1064,
+          9236,
+          1386,
+          9297
+        ]
+      },
+      {
+        "name": "RX-thunderbolt_and_port_usb_c_elevated",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1185,
+          9097,
+          1264,
+          9178
+        ]
+      },
+      {
+        "name": "S12_Shape_ffffff_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          561,
+          9000,
+          991,
+          9374
+        ]
+      },
+      {
+        "name": "RX-S12_Text_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          640,
+          9223,
+          912,
+          9322
+        ]
+      },
+      {
+        "name": "RX-S12_Smart_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          654,
+          9052,
+          896,
+          9191
+        ]
+      },
+      {
+        "name": "RX-S12_Sub_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          653,
+          8883,
+          1347,
+          8918
+        ]
+      },
+      {
+        "name": "RX-S12_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1057,
+          8682,
+          1944,
+          8818
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_13",
+    "bbox": [
+      478,
+      10034,
+      2522,
+      10870
+    ],
+    "children": [
+      {
+        "name": "S13_Shape_f5f5f7_3",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          1867,
+          10217,
+          2522,
+          10870
+        ]
+      },
+      {
+        "name": "S13_Text_3",
+        "kind": "type",
+        "visible": true,
+        "bbox": [
+          1977,
+          10564,
+          2414,
+          10754
+        ],
+        "text": "With a durable aluminium enclosure and free software updates, Mac is in it for the \u0003long haul — inside and out."
+      },
+      {
+        "name": "RX-S13_Sub_3",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          2069,
+          10494,
+          2325,
+          10532
+        ]
+      },
+      {
+        "name": "RX-flex_icon_macbook_badge_shield_checkmark_elevated_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          2140,
+          10358,
+          2251,
+          10431
+        ]
+      },
+      {
+        "name": "S13_Shape_f5f5f7_2",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          1171,
+          10217,
+          1829,
+          10870
+        ]
+      },
+      {
+        "name": "S13_Text_2",
+        "kind": "type",
+        "visible": true,
+        "bbox": [
+          1241,
+          10563,
+          1757,
+          10753
+        ],
+        "text": "The combination of Apple silicon and macOS means Mac delivers incredible power and speed \u0003to everything you do."
+      },
+      {
+        "name": "RX-S13_Sub_2",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1387,
+          10495,
+          1615,
+          10540
+        ]
+      },
+      {
+        "name": "RX-flex_icon_bolt_fill_elevated_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1470,
+          10341,
+          1532,
+          10438
+        ]
+      },
+      {
+        "name": "S13_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          478,
+          10217,
+          1133,
+          10870
+        ]
+      },
+      {
+        "name": "S13_Text_1",
+        "kind": "type",
+        "visible": true,
+        "bbox": [
+          563,
+          10564,
+          1045,
+          10747
+        ],
+        "text": "Mac is designed to be easy \u0003to learn and use — so you can start doing what you love \u0003in no time at all. "
+      },
+      {
+        "name": "RX-S13_Sub_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          661,
+          10495,
+          954,
+          10540
+        ]
+      },
+      {
+        "name": "RX-flex_icon_checklist_checked_elevated_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          755,
+          10347,
+          852,
+          10433
+        ]
+      },
+      {
+        "name": "RX-S13_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1267,
+          10034,
+          1735,
+          10095
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_14",
+    "bbox": [
+      823,
+      11024,
+      2177,
+      13341
+    ],
+    "children": [
+      {
+        "name": "Column_3",
+        "kind": "group",
+        "visible": true,
+        "bbox": [
+          1832,
+          11325,
+          2177,
+          13341
+        ]
+      },
+      {
+        "name": "Column_2",
+        "kind": "group",
+        "visible": true,
+        "bbox": [
+          1328,
+          11325,
+          1672,
+          13341
+        ]
+      },
+      {
+        "name": "Column_1",
+        "kind": "group",
+        "visible": true,
+        "bbox": [
+          823,
+          11325,
+          1168,
+          13341
+        ]
+      },
+      {
+        "name": "RX-S14_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1007,
+          11099,
+          1991,
+          11175
+        ]
+      },
+      {
+        "name": "RX-S14_Sub_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1410,
+          11024,
+          1590,
+          11064
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_15",
+    "bbox": [
+      478,
+      13588,
+      2522,
+      14456
+    ],
+    "children": [
+      {
+        "name": "S15_Shape_f5f5f7_1",
+        "kind": "shape",
+        "visible": true,
+        "bbox": [
+          478,
+          13588,
+          2522,
+          14456
+        ]
+      },
+      {
+        "name": "RX-flex_applecare_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          1680,
+          13898,
+          2304,
+          14146
+        ]
+      },
+      {
+        "name": "S15_Text_1",
+        "kind": "type",
+        "visible": true,
+        "bbox": [
+          572,
+          14128,
+          1213,
+          14214
+        ],
+        "text": "Enjoy easy, fast repairs for accidents like \u0003drops and spills, and priority care."
+      },
+      {
+        "name": "RX-S15_Head_1",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          571,
+          13913,
+          1249,
+          14079
+        ]
+      },
+      {
+        "name": "RX-flex_logo_applecare_large",
+        "kind": "pixel",
+        "visible": true,
+        "bbox": [
+          572,
+          13836,
+          711,
+          13869
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Section_16",
+    "bbox": [
+      477,
+      14556,
+      2518,
+      16143
+    ],
+    "children": [
+      {
+        "name": "Legal",
+        "kind": "type",
+        "visible": true,
+        "bbox": [
+          477,
+          14556,
+          2518,
+          16143
+        ],
+        "text": "◊Legal Disclaimers\rAccessories: Accessories are sold separately; availability varies by region. \rApple Intelligence: Apple Intelligence is available with Siri and device language set to Chinese (Simplified), Chinese (Traditional), Danish, Dutch, English, French, German, Italian, Japanese, Korean, Norwegian, Portuguese, Spanish, Swedish, Turkish or Vietnamese. Some features may not be available in all regions or languages. Some devices may not be available in all regions. \rApps: Some apps and services may require a subscription. Some software is sold separately.\rFeature, App and Service Availability: Features are subject to change. Some features, applications and services may not be available in all regions or languages. \rSiri AI: Siri AI will be available in beta later this year and requires an Apple Intelligence–enabled device set to a supported language. Available in English to start. Siri AI will not initially be available in the EU on iOS, iPadOS and watchOS.\rStorage: Actual formatted capacity of SSD is less.\rUp to 2x Faster Storage: Testing conducted by Apple in July 2026 using pre-production Mac mini systems with Apple M6, 12-core CPU and 12-core GPU, and production Mac mini systems with Apple M4, 10-core CPU and 10-core GPU, both configured with 32GB of unified memory and 2TB SSD. Tested with FIO 3.42, 1024KB request size, 10GB test file and \u0003IO depth=8. Mac mini systems tested with an attached 5K display. Performance tests are conducted using specific computer systems and reflect the approximate performance \u0003of Mac mini.\rUp to 4.8x Faster than M4: Testing conducted by Apple in July 2026 using pre-production Mac mini systems with Apple M6, 12-core CPU and 12-core GPU, and production Mac mini systems with Apple M4, 10-core CPU and 10-core GPU, both configured with 32GB of unified memory and 2TB SSD. Time to first token measured with an 8K-token prompt using a 14-billion parameter model with 4-bit quantisation, and LM Studio 0.4.18+1. Mac mini systems tested with an attached 5K display. Performance tests are conducted using specific computer systems and reflect the approximate performance of Mac mini. \rUp to 4x Faster than M4 Pro: Testing conducted by Apple in July 2026 using pre-production Mac mini systems with Apple M5 Pro, 18-core CPU, 20-core GPU, 64GB of unified memory and 8TB SSD, as well as production Mac mini systems with Apple M4 Pro, 14-core CPU, 20-core GPU, 64GB of unified memory and 8TB SSD. Time to first token measured with an 8K-token prompt using a 14-billion parameter model with 4-bit quantisation, and LM Studio 0.4.18+1. Mac mini systems tested with an attached 5K display. Performance tests are conducted using specific computer systems and reflect the approximate performance of Mac mini.\rUp to 10.3x Faster Graphics for 3D Rendering than Mac mini with M1 Chip: Testing conducted by Apple in July 2026 using pre-production Mac mini systems with Apple M6, 12-core CPU, 12-core GPU and 32GB of unified memory, as well as production Mac mini systems with Apple M4, 10-core CPU, 10-core GPU and 32GB of unified memory, and Mac mini systems with Apple M1, 8-core CPU, 8-core GPU and 16GB of unified memory, all configured with 2TB SSD. Tested with Blender 5.2.0 using the built-in benchmark. Mac mini systems tested with an attached 5K display. Performance tests are conducted using specific computer systems and reflect the approximate performance of Mac mini. \rUp to 13.5x Faster with LLM Prompt Processing than Mac mini with M1 Chip: Testing conducted by Apple in July 2026 using pre-production Mac mini systems with Apple M6, 12-core CPU, 12-core GPU and 32GB of unified memory, as well as production Mac mini systems with Apple M4, 10-core CPU, 10-core GPU and 32GB of unified memory, and \u0003Mac mini systems with Apple M1, 8-core CPU, 8-core GPU and 16GB of unified memory, all configured with 2TB SSD. Time to first token measured with an 8K-token prompt using a 14-billion parameter model with 4-bit quantisation, and LM Studio 0.4.18+1. Mac mini systems tested with an attached 5K display. Performance tests are conducted using specific computer systems and reflect the approximate performance of Mac mini. \rUp to 4.5x Faster GPU Performance than Mac mini with M2 Pro Chip: Testing conducted by Apple in July 2026 using pre-production Mac mini systems with Apple M5 Pro, 18-core CPU, 20-core GPU, 64GB of unified memory and 8TB SSD, as well as production Mac mini systems with Apple M2 Pro, 12-core CPU, 19-core GPU, 32GB of unified memory and \u00038TB SSD. Tested with Blender 5.2.0 using the built-in benchmark. Mac mini systems tested with an attached 5K display. Performance tests are conducted using specific computer systems and reflect the approximate performance of Mac mini.  \rUp to 8.5x Faster AI Performance than Mac mini with M2 Pro Chip: Testing conducted by Apple in July 2026 using pre-production Mac mini systems with Apple M5 Pro, 18-core CPU, 20-core GPU, 64GB of unified memory and 8TB SSD, as well as production Mac mini systems with Apple M2 Pro, 12-core CPU, 19-core GPU, 32GB of unified memory and \u00038TB SSD. Time to first token measured with an 8K-token prompt using a 14-billion parameter model with 4-bit quantisation, and LM Studio 0.4.18+1. Mac mini systems tested with an attached 5K display. Performance tests are conducted using specific computer systems and reflect the approximate performance of Mac mini. \rWi-Fi 7: Wi-Fi 7 availability varies by country. For more information, visit support.apple.com/en-in/148165."
+      }
+    ]
+  }
+]
