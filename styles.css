@@ -61,11 +61,9 @@ html {
   position: absolute;
   inset: -8px;
   border-radius: 12px;
-  background: linear-gradient(
-    135deg,
-    rgba(208, 155, 237, 0.1),
-    rgba(182, 120, 227, 0.1)
-  );
+  background: linear-gradient(135deg,
+      rgba(208, 155, 237, 0.1),
+      rgba(182, 120, 227, 0.1));
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: -1;
@@ -82,12 +80,10 @@ html {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent);
   transition: left 0.5s ease;
 }
 
@@ -252,6 +248,7 @@ html {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -405,16 +402,40 @@ html {
 }
 
 @media (max-width: 992px) {
+  .site-footer {
+    padding-top: 40px;
+    margin-top: 32px;
+  }
+
   .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 0 20px 32px 20px;
+    gap: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .footer-about {
+    grid-column: span 2;
+  }
+
   .footer-about p {
-    margin: 0 auto;
+    max-width: 100%;
   }
-  .social-icons {
-    justify-content: center;
+
+  .footer-social {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-about,
+  .footer-social {
+    grid-column: span 1;
   }
 }
 
@@ -471,6 +492,7 @@ html {
   font-weight: bold;
   transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s;
   z-index: 20;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hotspot-pin::after {
@@ -487,36 +509,42 @@ html {
     transform: scale(0.6);
     opacity: 1;
   }
+
   100% {
     transform: scale(1.6);
     opacity: 0;
   }
 }
 
-.hotspot-pin:hover {
-  transform: scale(1.25);
+.hotspot-pin:hover,
+.hotspot-pin.active {
+  transform: scale(1.2);
   background: var(--apple-blue-hover);
 }
 
 /* Hotspot Tooltip */
 .hotspot-tooltip {
   position: absolute;
-  bottom: calc(100% + 12px);
+  bottom: calc(100% + 10px);
   left: 50%;
   transform: translateX(-50%) translateY(6px);
-  background: rgba(29, 29, 31, 0.94);
-  backdrop-filter: blur(12px);
+  background: rgba(29, 29, 31, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   color: #f5f5f7;
-  padding: 8px 14px;
+  padding: 8px 12px;
   border-radius: 12px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
-  white-space: nowrap;
+  white-space: normal;
+  width: max-content;
+  max-width: 220px;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s ease, transform 0.2s ease;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   z-index: 30;
+  line-height: 1.35;
 }
 
 .hotspot-tooltip::after {
@@ -527,12 +555,45 @@ html {
   transform: translateX(-50%);
   border-width: 5px;
   border-style: solid;
-  border-color: rgba(29, 29, 31, 0.94) transparent transparent transparent;
+  border-color: rgba(29, 29, 31, 0.96) transparent transparent transparent;
 }
 
-.hotspot-pin:hover .hotspot-tooltip {
+.hotspot-pin:hover .hotspot-tooltip,
+.hotspot-pin.active .hotspot-tooltip {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 640px) {
+  .hotspot-pin {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .hotspot-tooltip {
+    max-width: 170px;
+    font-size: 10px;
+    padding: 6px 9px;
+  }
+
+  /* Rightmost port tooltip repositioning to prevent viewport clipping */
+  #sec-ports .hotspot-pin:last-child .hotspot-tooltip {
+    left: auto;
+    right: -8px;
+    transform: translateY(6px);
+  }
+
+  #sec-ports .hotspot-pin:last-child:hover .hotspot-tooltip,
+  #sec-ports .hotspot-pin:last-child.active .hotspot-tooltip {
+    transform: translateY(0);
+  }
+
+  #sec-ports .hotspot-pin:last-child .hotspot-tooltip::after {
+    left: auto;
+    right: 14px;
+    transform: none;
+  }
 }
 
 /* Legal footnote jump highlight */
@@ -545,25 +606,44 @@ html {
     background-color: rgba(0, 113, 227, 0.25);
     border-radius: 4px;
   }
+
   100% {
     background-color: transparent;
   }
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar Utilities */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #c1c1c1;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth Touch Scrolling */
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 
 /* High-res image display */
@@ -572,4 +652,153 @@ html {
   height: auto;
   display: block;
   object-fit: cover;
+}
+
+/* B2B Pre-order Form & Input Micro-interactions */
+#buy-configurator-modal {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-overflow-scrolling: touch;
+}
+
+#buy-configurator-modal input:focus,
+#buy-configurator-modal select:focus,
+#buy-configurator-modal textarea:focus {
+  border-color: #0071e3;
+  box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.12);
+  outline: none;
+}
+
+/* Radio Card Interactive Elevation & Selected State */
+.spec-radio-card {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.spec-radio-card:hover {
+  border-color: #b0b0b8;
+  transform: translateY(-1px);
+}
+
+.spec-radio-card.is-selected,
+.spec-radio-card:has(input:checked) {
+  border-color: #0071e3 !important;
+  background-color: rgba(0, 113, 227, 0.04) !important;
+  box-shadow: 0 0 0 1px #0071e3, 0 4px 14px rgba(0, 113, 227, 0.08) !important;
+}
+
+.radio-check-indicator {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.spec-radio-card.is-selected .radio-check-indicator,
+.spec-radio-card:has(input:checked) .radio-check-indicator {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Field Validation States */
+.input-error-state {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+}
+
+.input-error-state:focus {
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.15) !important;
+}
+
+.field-error-msg {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #dc2626;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 4px;
+  animation: fadeInDown 0.15s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Quick Requirements Tag Pills */
+.pref-tag-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  color: #4b5563;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pref-tag-btn:hover {
+  background-color: #f0f7ff;
+  border-color: #bfdbfe;
+  color: #0071e3;
+}
+
+.pref-tag-btn.is-active {
+  background-color: #eff6ff;
+  border-color: #0071e3;
+  color: #0071e3;
+  font-weight: 600;
+}
+
+/* Stage Transitions */
+#form-stage-1,
+#form-stage-2 {
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes pulse-subtle {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.85;
+    transform: scale(0.97);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.2s infinite ease-in-out;
+}
+
+/* Modal backdrop click feedback animation */
+@keyframes modalNudge {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.012);
+  }
+}
+
+.animate-modal-nudge {
+  animation: modalNudge 0.22s cubic-bezier(0.25, 1, 0.5, 1);
 }
