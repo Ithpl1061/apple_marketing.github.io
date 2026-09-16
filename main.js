@@ -157,5 +157,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // 7. Mobile Navigation Toggle
+  window.toggleMobileMenu = function() {
+    const mobileNav = document.getElementById('mobileNav');
+    const toggleButton = document.querySelector('.mobile-menu-toggle');
+    if (!mobileNav || !toggleButton) return;
+
+    mobileNav.classList.toggle('active');
+    const spans = toggleButton.querySelectorAll('span');
+    const isActive = mobileNav.classList.contains('active');
+
+    if (isActive) {
+      if (spans[0]) spans[0].style.transform = 'translateY(6px) rotate(45deg)';
+      if (spans[1]) spans[1].style.opacity = '0';
+      if (spans[2]) spans[2].style.transform = 'translateY(-6px) rotate(-45deg)';
+    } else {
+      if (spans[0]) spans[0].style.transform = 'none';
+      if (spans[1]) spans[1].style.opacity = '1';
+      if (spans[2]) spans[2].style.transform = 'none';
+    }
+  };
+
+  const arrowBtn = document.querySelector('.arrow-btn');
+  const appleSubmenu = document.getElementById('appleSubmenu');
+  if (arrowBtn && appleSubmenu) {
+    arrowBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      appleSubmenu.classList.toggle('hidden');
+    });
+  }
+
   console.log('Mac mini marketing page initialized.');
 });

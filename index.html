@@ -44,54 +44,141 @@
 
 <body class="bg-white text-[#1d1d1f] antialiased selection:bg-blue-100 selection:text-blue-900">
 
-  <!-- ==================== APPLE GLOBAL NAVIGATION ==================== -->
-  <!--<header class="sticky top-0 z-50 w-full apple-nav-blur border-b border-black/[0.08] transition-colors duration-300 text-xs">
-    <nav class="max-w-[1024px] mx-auto px-4 h-11 flex items-center justify-between text-gray-700">
-      Apple Logo 
-      <a href="#" class="hover:text-black transition-colors" aria-label="Apple">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 170 170">
-          <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.6-7.77-11.72-14.19-6.09-9.45-10.98-20.2-14.67-32.25-3.69-12.06-5.54-23.47-5.54-34.25 0-14.56 3.69-26.68 11.06-36.37 7.37-9.69 16.73-14.6 28.08-14.73 4.35 0 9.28 1.15 14.79 3.44 5.51 2.29 9.17 3.49 10.98 3.59 1.45-.1 5.3-1.35 11.56-3.74 6.26-2.39 11.28-3.44 15.06-3.15 14.14.76 25.04 6.13 32.7 16.12-12.87 7.82-19.14 18.39-18.8 31.7.34 10.43 4.35 19.19 12.03 26.27 7.68 7.08 17.07 11.14 28.16 12.18-2.61 7.6-5.77 15.03-9.48 22.3zM119.22 31.84c0-7.39 2.65-14.39 7.95-21 5.3-6.61 11.83-10.59 19.59-11.94.43 2.17.65 4.35.65 6.52 0 7.39-2.72 14.6-8.15 21.63-5.43 7.03-12.07 11.08-19.92 12.15-.12-2.38-.12-4.83-.12-7.36z"/>
-        </svg>
-      </a>
-      <a href="#sec-overview" class="hidden md:inline hover:text-black transition-colors">Store</a>
-      <a href="#sec-overview" class="hidden md:inline hover:text-black font-semibold text-black transition-colors">Mac</a>
-      <a href="#sec-ecosystem" class="hidden md:inline hover:text-black transition-colors">iPad</a>
-      <a href="#sec-ecosystem" class="hidden md:inline hover:text-black transition-colors">iPhone</a>
-      <a href="#sec-specs" class="hidden md:inline hover:text-black transition-colors">Watch</a>
-      <a href="#sec-accessories" class="hidden md:inline hover:text-black transition-colors">AirPods</a>
-      <a href="#sec-accessories" class="hidden md:inline hover:text-black transition-colors">Accessories</a>
-      <a href="#sec-applecare" class="hidden md:inline hover:text-black transition-colors">Support</a>
-      
-      Right actions
-      <div class="flex items-center space-x-5">
-        <button class="hover:text-black transition-colors" aria-label="Search">
-          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 16 16">
-            <path d="M15.7 14.3l-3.8-3.8a6.5 6.5 0 1 0-1.4 1.4l3.8 3.8a1 1 0 0 0 1.4-1.4zM2 6.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z"/>
-          </svg>
+  <!-- ==================== ITHPL SITE HEADER ==================== -->
+  <header class="site-header sticky top-0 z-50 glassmorphism transition-all duration-300 ease-out border-b border-black/[0.06]">
+    <div class="container max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="header-container flex items-center justify-between min-h-20 py-2">
+        <!-- Logos -->
+        <div class="flex items-center gap-4">
+          <a href="https://ithpl.com/home" class="logo flex items-center relative logo-glow transition-transform duration-300 hover:scale-105">
+            <img src="images/ithpllogo.png" alt="ITHPL Logo" width="170" height="42" class="h-12 sm:h-14 w-auto object-contain transition-all duration-300" style="filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));" />
+          </a>
+          <a href="https://ithpl.com/apple" class="logo flex items-center relative logo-glow transition-transform duration-300 hover:scale-105">
+            <img src="images/apple_business_partner_logo.svg" alt="Apple Business Partner Logo" width="110" height="56" class="h-11 sm:h-13 w-auto object-contain transition-all duration-300" style="filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));" />
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="mobile-menu-toggle md:hidden flex flex-col cursor-pointer p-2 rounded-lg transition-colors duration-300 hover:bg-purple-100"
+          onclick="toggleMobileMenu()"
+          type="button"
+          aria-label="Toggle navigation menu">
+          <span class="w-6 h-0.5 bg-slate-600 mb-1 transition-all duration-300 rounded-full"></span>
+          <span class="w-6 h-0.5 bg-slate-600 mb-1 transition-all duration-300 rounded-full"></span>
+          <span class="w-6 h-0.5 bg-slate-600 transition-all duration-300 rounded-full"></span>
         </button>
-        <button class="hover:text-black transition-colors trigger-buy-modal" aria-label="Bag">
-          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 16 16">
-            <path d="M12.5 4h-2a2.5 2.5 0 0 0-5 0h-2A1.5 1.5 0 0 0 2 5.5v8A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 12.5 4zm-4.5-1.5a1.5 1.5 0 0 1 1.5 1.5h-3a1.5 1.5 0 0 1 1.5-1.5zm4.5 11.5h-9a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5z"/>
-          </svg>
-        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="main-nav hidden md:flex items-center gap-1 mx-auto" aria-label="Main Navigation">
+          <ul class="main-nav-list flex items-center gap-1 m-0 p-0 list-none">
+            <li class="nav-item">
+              <a href="https://ithpl.com/home" class="nav-hover">Home</a>
+              <div class="dropdown-menu single-column">
+                <div class="dropdown-arrow"></div>
+                <a href="https://ithpl.com/home#why-choose-us">Why ITHPL</a>
+                <a href="https://ithpl.com/home#core-values">Key Features</a>
+                <a href="https://ithpl.com/home#products">Featured Products</a>
+                <a href="https://ithpl.com/home#certifications">Certifications</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="https://ithpl.com/about-us" class="nav-hover">About Us</a>
+              <div class="dropdown-menu wide">
+                <div class="dropdown-arrow"></div>
+                <div class="dropdown-column">
+                  <a href="https://ithpl.com/about-us#about-a">Who We Are</a>
+                  <a href="https://ithpl.com/about-us#drives-us-a">Mission, Vision & Value</a>
+                  <a href="https://ithpl.com/about-us#journey">Journey</a>
+                </div>
+                <div class="dropdown-column">
+                  <a href="https://ithpl.com/about-us#core-team">Core Team</a>
+                  <a href="https://ithpl.com/about-us#partners">Partners</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="https://store.ithpl.com/" class="nav-hover" target="_blank" rel="noopener">Products</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="https://ithpl.com/services" class="nav-hover">Services</a>
+              <div class="dropdown-menu single-column">
+                <div class="dropdown-arrow"></div>
+                <a href="https://ithpl.com/ewaste-management">E-Waste Management</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="https://ithpl.com/solutions" class="nav-hover">Solutions</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="https://ithpl.com/apple" class="nav-hover font-semibold text-purple-700">Apple</a>
+              <div class="dropdown-menu single-column">
+                <div class="dropdown-arrow"></div>
+                <a href="https://ithpl.com/apple-enterprises">Apple for Enterprises</a>
+                <a href="https://ithpl.com/apple-smart-epp">Apple Smart EPP</a>
+                <a href="https://ithpl.com/apple-tco-calc">Apple TCO Calculator</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="https://ithpl.com/sustainability" class="nav-hover">Sustainability</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Contact Button -->
+        <a href="https://ithpl.com/contact-us" class="contact-button hidden sm:inline-block gradient-shine">
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="main-nav-mobile md:hidden" id="mobileNav">
+      <div class="flex flex-col p-4 space-y-1">
+        <a href="https://ithpl.com/home">Home</a>
+        <a href="https://ithpl.com/about-us">About Us</a>
+        <a href="https://store.ithpl.com/" target="_blank" rel="noopener">Products</a>
+        <a href="https://ithpl.com/services">Services</a>
+        <a href="https://ithpl.com/solutions">Solutions</a>
+        
+        <!-- Apple Submenu Mobile -->
+        <div class="w-full flex flex-col items-center p-2">
+          <div class="flex items-center gap-2">
+            <a href="https://ithpl.com/apple" class="font-semibold text-purple-700">Apple</a>
+            <button type="button" class="arrow-btn text-xs px-2 py-1 bg-gray-100 rounded">▾</button>
+          </div>
+          <div id="appleSubmenu" class="flex flex-col items-center space-y-1 mt-2 text-sm">
+            <a href="https://ithpl.com/apple-enterprises" class="text-xs py-1">Apple for Enterprises</a>
+            <a href="https://ithpl.com/apple-smart-epp" class="text-xs py-1">Apple Smart EPP</a>
+            <a href="https://ithpl.com/apple-tco-calc" class="text-xs py-1">Apple TCO Calculator</a>
+          </div>
+        </div>
+
+        <a href="https://ithpl.com/sustainability">Sustainability</a>
+        <a href="https://ithpl.com/contact-us" class="font-semibold text-purple-700">Contact Us</a>
       </div>
     </nav>
   </header>
-   -->
 
   <!-- ==================== STICKY PRODUCT SUBNAV ==================== -->
   <div id="apple-subnav"
-    class="sticky top-11 z-40 w-full apple-subnav-blur border-b border-black/[0.05] transition-all duration-300">
+    class="sticky top-[73px] z-40 w-full apple-subnav-blur border-b border-black/[0.06] transition-all duration-300 shadow-sm">
     <div class="max-w-[1024px] mx-auto px-4 h-13 flex items-center justify-between py-2.5">
       <div class="flex items-baseline space-x-3">
-        <a href="#sec-overview"
+        <a href="#sec-hero"
           class="text-xl font-bold tracking-tight text-[#1d1d1f] hover:text-blue-600 transition-colors">Mac mini</a>
         <span class="text-xs text-gray-500 hidden sm:inline">From ₹59,900.00*</span>
       </div>
 
       <div class="flex items-center space-x-6 text-xs">
         <nav class="hidden sm:flex items-center space-x-5 text-gray-600">
-          <a href="#sec-overview" class="hover:text-black font-medium text-black">Overview</a>
+          <a href="#sec-hero" class="hover:text-black font-medium text-black">Overview</a>
           <a href="#sec-ports" class="hover:text-black">Ports</a>
           <a href="#sec-chips" class="hover:text-black">M4 & M4 Pro</a>
           <a href="#sec-specs" class="hover:text-black">Tech Specs</a>
@@ -563,35 +650,72 @@
 
   </main>
 
-  <!-- ==================== APPLE GLOBAL FOOTER ==================== -->
-  <footer class="w-full bg-[#f5f5f7] border-t border-gray-300/80 text-[11px] text-[#6e6e73] py-8">
-    <div class="max-w-[1024px] mx-auto px-4 space-y-4">
-      <div class="flex items-center space-x-2 text-gray-500 pb-4 border-b border-gray-200">
-        <a href="#" class="hover:text-black">
-          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 170 170">
-            <path
-              d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.6-7.77-11.72-14.19-6.09-9.45-10.98-20.2-14.67-32.25-3.69-12.06-5.54-23.47-5.54-34.25 0-14.56 3.69-26.68 11.06-36.37 7.37-9.69 16.73-14.6 28.08-14.73 4.35 0 9.28 1.15 14.79 3.44 5.51 2.29 9.17 3.49 10.98 3.59 1.45-.1 5.3-1.35 11.56-3.74 6.26-2.39 11.28-3.44 15.06-3.15 14.14.76 25.04 6.13 32.7 16.12-12.87 7.82-19.14 18.39-18.8 31.7.34 10.43 4.35 19.19 12.03 26.27 7.68 7.08 17.07 11.14 28.16 12.18-2.61 7.6-5.77 15.03-9.48 22.3zM119.22 31.84c0-7.39 2.65-14.39 7.95-21 5.3-6.61 11.83-10.59 19.59-11.94.43 2.17.65 4.35.65 6.52 0 7.39-2.72 14.6-8.15 21.63-5.43 7.03-12.07 11.08-19.92 12.15-.12-2.38-.12-4.83-.12-7.36z" />
-          </svg>
+  <!-- ==================== ITHPL SITE FOOTER ==================== -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-container">
+
+      <!-- About Section -->
+      <div class="footer-about">
+        <a href="https://ithpl.com/home" class="footer-logo inline-flex items-center space-x-2 transition-opacity duration-300 hover:opacity-80">
+          <img src="images/ithpllogo.png" alt="ITHPL Logo" class="footer-logo" width="193" height="48" loading="lazy" />
         </a>
-        <span>›</span>
-        <a href="#" class="hover:text-black">Mac</a>
-        <span>›</span>
-        <span class="text-gray-700 font-medium">Mac mini</span>
+        <p>
+          Empowering businesses with cutting-edge IT solutions since 2015.
+        </p>
       </div>
 
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-        <p>Copyright © 2026 Apple Inc. All rights reserved.</p>
-        <div class="flex flex-wrap gap-x-4 gap-y-1">
-          <a href="#" class="hover:text-black">Privacy Policy</a>
-          <span>|</span>
-          <a href="#" class="hover:text-black">Terms of Use</a>
-          <span>|</span>
-          <a href="#" class="hover:text-black">Sales Policy</a>
-          <span>|</span>
-          <a href="#" class="hover:text-black">Legal</a>
-          <span>|</span>
-          <a href="#" class="hover:text-black">Site Map</a>
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul>
+          <li><a href="https://ithpl.com/about-us">About Us</a></li>
+          <li><a href="https://ithpl.com/services">Services</a></li>
+          <li><a href="https://ithpl.com/solutions">Solutions</a></li>
+          <li><a href="https://ithpl.com/sustainability">Sustainability</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links pt-0 sm:pt-13">
+        <ul>
+          <li><a href="https://ithpl.com/contact-us">Contact</a></li>
+          <li><a href="https://ithpl.com/blogs">Blogs</a></li>
+          <li><a href="https://ithpl.com/hpforbusiness">HP</a></li>
+        </ul>
+      </div>
+
+      <!-- Policies -->
+      <div class="footer-links">
+        <h3 class="footer-heading">Policies</h3>
+        <ul>
+          <li><a href="https://ithpl.com/shipping-policy">Shipping</a></li>
+          <li><a href="https://ithpl.com/terms-and-conditions">Terms & Conditions</a></li>
+          <li><a href="https://ithpl.com/privacy-policy">Privacy</a></li>
+          <li><a href="https://ithpl.com/refund-policy">Refund</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-social">
+        <h3 class="footer-heading">Connect With Us</h3>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/innovative-techhub-pvt-ltd/?viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/linkedin-logo.png" alt="LinkedIn" loading="lazy" />
+          </a>
+          <a href="https://www.facebook.com/ithpl" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook" loading="lazy" />
+          </a>
+          <a href="https://www.instagram.com/innovativetechhubpvtltd/?next=%2F&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="images/instagram-logo.svg" alt="Instagram" loading="lazy" />
+          </a>
         </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container text-center">
+        <p>© 2026 Innovative Tech Hub Pvt. Ltd. All rights reserved.</p>
       </div>
     </div>
   </footer>
